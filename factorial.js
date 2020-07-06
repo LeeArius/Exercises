@@ -1,0 +1,10 @@
+function factor(number){
+  let result = 1;
+  for (let counter = number; counter > 0; counter-= 1) {
+    result *= counter
+  }
+  return console.log(result);
+
+}
+
+factor(4);
