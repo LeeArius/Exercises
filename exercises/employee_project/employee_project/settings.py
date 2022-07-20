@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'employee_register'
+    'employee_register',
+    
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,8 @@ WSGI_APPLICATION = 'employee_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'EmployeeDB',
-        'USER': 'postgres',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        "NAME": 'db.sqlite3'
     }
 }
 
